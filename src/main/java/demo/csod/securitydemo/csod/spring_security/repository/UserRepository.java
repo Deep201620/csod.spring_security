@@ -1,4 +1,4 @@
-package demo.csod.securitydemo.csod.spring_security.service;
+package demo.csod.securitydemo.csod.spring_security.repository;
 
 import demo.csod.securitydemo.csod.spring_security.models.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,7 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<Users,Integer> {
-
     Optional<Users> findByEmailId(String emailId);
 
 }
