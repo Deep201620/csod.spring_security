@@ -15,6 +15,4 @@ public class RegisterService{
         Users savedUser = userRepository.save(user);
         return savedUser;
     }
-
-
 }

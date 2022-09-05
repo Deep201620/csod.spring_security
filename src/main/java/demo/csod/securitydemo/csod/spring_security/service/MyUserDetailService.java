@@ -1,4 +1,4 @@
-package demo.csod.securitydemo.csod.spring_security;
+package demo.csod.securitydemo.csod.spring_security.service;
 
 import demo.csod.securitydemo.csod.spring_security.models.Users;
 import demo.csod.securitydemo.csod.spring_security.repository.UserRepository;

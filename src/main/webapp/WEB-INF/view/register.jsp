@@ -14,7 +14,7 @@
 
 <div class="container">
   <h2>Registration form</h2>
-  <form class="form-horizontal" action="api/register" id="regForm" method="post">
+  <form class="form-horizontal" action="/api/register" id="regForm" method="post">
   <div class="form-group">
       <label class="control-label col-sm-2" for="name">Name:</label>
       <div class="col-sm-10">
