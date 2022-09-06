@@ -1,4 +1,4 @@
-package demo.csod.securitydemo.csod.spring_security;
+package demo.csod.securitydemo.csod.spring_security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +28,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         httpSecurity
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/index","/api/login").permitAll()
+                .antMatchers("/index","/api/login","/api/register").permitAll()
                 .antMatchers("/welcome").authenticated()
                 .and()
                 .logout().invalidateHttpSession(true)

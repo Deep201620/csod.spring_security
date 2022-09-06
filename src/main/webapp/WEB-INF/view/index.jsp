@@ -4,18 +4,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div id="nav-placeholder">
-
-</div>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <!--Links-->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/api/register">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/api/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/api/index">Home</a>
+        </li>
+    </ul>
+</nav>
 <h2 style="margin: 20%;">Hello User</h2>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-$.get("navbar", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-</script>
+
 </body>
 </html>
